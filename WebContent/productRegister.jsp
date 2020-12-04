@@ -55,7 +55,7 @@
 							</div>
 							<div class="form-group">
 								<label>설명</label>
-								<input type="text" name ="productExplanation" placeholder="상품의 설명을 입력하세요." />
+								<textarea name ="productExplanation" rows="2" placeholder="상품의 설명을 입력하세요."></textarea>
 							</div>
 							<div class="form-group">
 								<label>상품 이미지</label>

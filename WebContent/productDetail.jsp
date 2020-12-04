@@ -101,10 +101,10 @@
 										<span> 
 											<% String sessionUserID = session.getAttribute("userID").toString(); %>
 											<input type="text" name ="userID" placeholder="<%=sessionUserID%>" readonly/>
-										
 											<input type="text" name="contents" value=""/>
 										</span>
 										<input type="hidden" name="productID" value="<%= productID%>">  
+										<br/>
 										<button type="submit" class="btn btn-default pull-right">
 											작성하기
 										</button> 
