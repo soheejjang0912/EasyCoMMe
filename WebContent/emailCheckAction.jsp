@@ -4,8 +4,7 @@
 <%@ page import="java.io.PrintWriter"%>
 
 <%
-	//이메일 인증을 하면 그에대한 처리 페이지
-	
+	//이메일 인증을 후 그에대한 처리 페이지 
 	request.setCharacterEncoding("UTF-8");
 	String code = null; 
 	if(request.getParameter("code") != null){

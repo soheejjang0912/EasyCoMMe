@@ -20,12 +20,7 @@
 								<label>비밀번호</label>
 								<input type="password" name ="userPassword" placeholder="비밀번호를 입력하세요." />
 							</div>
-							<button type="submit" class="btn btn-default">로그인</button>
-							<!-- 
-							<span>
-								<input type="checkbox" class="checkbox"> 
-								Keep me signed in
-							</span>  --> 
+							<button type="submit" class="btn btn-default">로그인</button> 
 						</form>
 					</div><!--/login form-->
 				</div> 

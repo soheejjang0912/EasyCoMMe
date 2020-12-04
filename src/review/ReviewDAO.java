@@ -10,6 +10,7 @@ import util.DatabaseUtil;
 
 public class ReviewDAO {
 	
+	//¸®ºäµî·Ï
 	public int register(ReviewDTO review) {
 		String SQL = "INSERT INTO review VALUES (0, ?, ?, ?, now())"; 
 		Connection conn = null;

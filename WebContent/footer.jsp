@@ -9,8 +9,7 @@
 					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
 				</div>
 			</div>
-		</div>
-		
+		</div> 
 	</footer>
 	<!--/Footer--> 
 	

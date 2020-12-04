@@ -14,29 +14,11 @@
 					<div class="login-form"><!--login form-->
 						<h2>계정관리</h2>
 						<form method="post" action="./userManageAction.jsp">
-							<%    
-							
-							//UserDTO csList = new UserDTO();
-							String userID =session.getAttribute("userID").toString();
-							//(String)session.getAttribute("userID");
+							<%     
+							String userID =session.getAttribute("userID").toString(); 
 							System.out.println(userID);
 							UserDTO userInfo = new UserDAO().getUser(userID);
-							 
-							/* 
-						 	if ((String)session.getAttribute("userID")!=null){
-								String userID =  (String)session.getAttribute("userID");
-							}else{ 
-								PrintWriter script = response.getWriter();
-								script.println("<script>");
-								script.println("alert('오류');");
-								script.println("history.back();");
-								script.println("</script>");
-								script.close();
-							}  
-						 	String id = (String)session.getAttribute("userID");
-							UserDTO user = new UserDAO().getUser(id); */
-						//	CustomerServiceDTO cs = new CustomerServiceDAO().getCsDetail(csID); 
-							
+							  
 							%>
 							<div class="form-group">
 								<label>아이디</label>

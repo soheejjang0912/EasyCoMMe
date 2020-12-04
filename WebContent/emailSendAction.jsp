@@ -12,8 +12,7 @@
 <%@ page import="util.Gmail"%>
 <%@ page import="java.io.PrintWriter"%>
 
-<%
-
+<% 
 	UserDAO userDAO = new UserDAO();
 	String userID = null;
 	if(session.getAttribute("userID") != null){ //세션값이 유효한 상태일 때
@@ -27,8 +26,7 @@
 		script.println("</script>");
 		script.close();
 		return;
-	}
-	
+	} 
 	boolean emailChecked = userDAO.getUserEmailChecked(userID);
 	if(emailChecked == true ){
 		PrintWriter script = response.getWriter();
@@ -83,10 +81,7 @@
 	}
 	
 	
-%>
-
-
-
+%> 
 <!doctype html>
 
 <html>

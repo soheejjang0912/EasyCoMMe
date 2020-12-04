@@ -4,11 +4,9 @@
 <%@ page import="java.net.URLEncoder" %>
 <%@page import="cart.CartProductDTO"%>
 <%@page import="cart.CartDTO"%>
-<%@page import="cart.CartDAO"%>
+<%@page import="cart.CartDAO"%> 
 
-
-<%@include file="header.jsp" %>
-
+<%@include file="header.jsp" %> 
 	<section id="cart_items">
 		<div class="container">
 			<div class="breadcrumbs">
@@ -29,8 +27,7 @@
 							<td></td>
 						</tr>
 					</thead>
-					<tbody> 
-						 
+					<tbody>  
 						<%
 						ArrayList<CartProductDTO> cartList = new ArrayList<CartProductDTO>();
 						String userID = (String)session.getAttribute("userID");
@@ -38,8 +35,7 @@
 						if(cartList != null){ 
 							for(int i = 0; i< cartList.size(); i++){ 
 								CartProductDTO cart = cartList.get(i);
-						%>
-					
+						%> 
 						<tr>
 							<td class="cart_product">
 								<a href=""><img src="./images/product-details/<%= cart.getProductImg()%>" alt="" width="140px"></a>
@@ -58,18 +54,16 @@
 								<p class="cart_total_price"><%= cart.getCartTotalPrice() %></p>
 							</td>
 							<form method="post" action="./cartDeleteAction.jsp">
-							<td class="cart_delete">
-								<button type="submit" class="cart_quantity_delete"><i class="fa fa-times"></i></button>
-								<input type="hidden" name="cartID" value="<%= cart.getCartID()%>">  
-							</td>
+								<td class="cart_delete">
+									<button type="submit" class="cart_quantity_delete"><i class="fa fa-times"></i></button>
+									<input type="hidden" name="cartID" value="<%= cart.getCartID()%>">  
+								</td>
 							</form>
-						</tr>
-						
+						</tr> 
 						<%
 								}
 							} 
-						%>
-					 
+						%> 
 					</tbody>
 				</table>
 			</div>

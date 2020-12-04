@@ -85,9 +85,7 @@
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
-									<div class="productinfo text-center">
-										<!--<img src="images/home/product1.jpg" alt="" />  
-										<h2><%= product.getProductImg()%></h2>-->
+									<div class="productinfo text-center">   
 										<img src="./images/product-details/<%= product.getProductImg()%>" width="200px" height="200px" alt="" />
 										
 										<h2><%= product.getProductName()%></h2>

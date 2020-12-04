@@ -75,7 +75,7 @@ public class CartDAO {
 		return cartList;
 	}
 	
-	//상품 상세내용
+	//카트 지우기
 	public int cartDelete(int cartID) {
 		String SQL = ""; 
 		Connection conn = null;

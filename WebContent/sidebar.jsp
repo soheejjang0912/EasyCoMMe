@@ -78,35 +78,6 @@
 					</div>
 				</div>
 				 
-			</div><!--/category-products-->
-		
-		 <!-- 추가예정 카테고리
-			<div class="brands_products">brands_products
-				<h2>Brands</h2>
-				<div class="brands-name">
-					<ul class="nav nav-pills nav-stacked">
-						<li><a href="#">나이키 </a></li>
-						<li><a href="#">아디다스 </a></li>
-						<li><a href="#">폴햄 </a></li>
-						<li><a href="#">LG </a></li>
-						<li><a href="#">SAMSUNG </a></li>
-						<li><a href="#">EMART </a></li>
-						<li><a href="#">LOTTEMART </a></li>
-					</ul>
-				</div>
-			</div>/brands_products
-			
-			<div class="price-range">price-range
-				<h2>Price Range</h2>
-				<div class="well text-center">
-					 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-					 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
-				</div>
-			</div>/price-range
-			
-			<div class="shipping text-center">shipping
-				<img src="images/home/shipping.jpg" alt="" />
-			</div>/shipping
-		 -->
+			</div><!--/category-products--> 
 		</div>
 	</div>

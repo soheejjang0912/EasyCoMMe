@@ -8,6 +8,7 @@ import util.DatabaseUtil;
 
 public class UserDAO {
 	
+	//로그인
 	public int login(String userID, String userPassword) {
 		String SQL = "SELECT userPassword FROM USER WHERE userID = ?";
 		Connection conn = null;
@@ -121,7 +122,7 @@ public class UserDAO {
 	}
 	
 	
-//이메일 검증	
+	//이메일 검증	
 	public boolean getUserEmailChecked(String userID) {
 		String SQL = "SELECT userEmailChecked FROM USER WHERE userID = ?"; 
 		Connection conn = null;
@@ -146,7 +147,7 @@ public class UserDAO {
 	}
 	
 	
-//이메일 인증 해주는 함수	
+	//이메일 인증 해주는 함수	
 	public boolean setUserEmailChecked(String userID) {
 		String SQL = "UPDATE USER SET userEmailChecked = true WHERE userID = ?"; 
 		Connection conn = null;
@@ -167,9 +168,9 @@ public class UserDAO {
 		}
 		return false; 
 	}
+	
 	//유저타입 구분 
-	public String getType(String userID) {
-		
+	public String getType(String userID) { 
 		String SQL = "";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -192,9 +193,9 @@ public class UserDAO {
 		}
 		return null;	//데이터 베이스 오류
 	}	
-	//유저타입 구분 
-	public UserDTO getUser(String userID) {
-		
+	
+	//해당 유저정보 가져오기
+	public UserDTO getUser(String userID) { 
 		String SQL = "";
 		Connection conn = null;
 		PreparedStatement pstmt = null;

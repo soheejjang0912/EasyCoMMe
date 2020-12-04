@@ -5,12 +5,7 @@
 <%@ page import="util.SHA256" %>
 <%@ page import="java.io.PrintWriter" %>
 
-<%
-	/* request.setCharacterEncoding("UTF-8");
-	int productID = 0;
-	productID = Integer.parseInt(request.getParameter("productID"));
-	System.out.println(productID);
-	 */
+<% 
 	request.setCharacterEncoding("UTF-8");
 	String userID = null;
 	
@@ -38,8 +33,8 @@
 	}
 	
 	//CartDAO cartDAO = new CartDAO();
-	int result = new CartDAO().cartDelete(cartID);
 	//int result = cartDAO.cartDelete(cartID);
+	int result = new CartDAO().cartDelete(cartID);
 	
 	if(result == 1){   
 		PrintWriter script = response.getWriter();

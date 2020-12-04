@@ -54,24 +54,12 @@
 									<li><a href="">JAPAN</a></li>
 								</ul>
 							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									원
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu"> 
-									<li><a href="">엔</a></li>
-								</ul>
-							</div>
 						</div> -->
 					</div>
 					<div class="col-md-8 clearfix">
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
-								
-							 <!-- 
-								<li><a href="productRegister.jsp"><i class="fa fa-crosshairs"></i> 상품등록</a></li> -->
+								 
 								<%   
 								if(session.getAttribute("userID")==null){
 									out.println("<li><a href='userLogin.jsp'><i class='fa fa-lock'></i> 로그인</a></li>");
@@ -87,11 +75,7 @@
 									}
 									out.println("<li><a href='userLogout.jsp'><i class='fa fa-lock'></i> 로그아웃</a></li>");
 								}
-								%>
-								<!-- 
-								<li><a href="userLogin.jsp"><i class="fa fa-lock"></i> 로그인</a></li>
-								<li><a href="userRegister.jsp"><i class="fa fa-user"></i> 회원가입</a></li> 
-								--> 
+								%> 
 							</ul>
 						</div>
 					</div>
@@ -121,22 +105,19 @@
 										<li><a href="producCategoryList.jsp?productType=바지">바지</a></li>
 										<li><a href="producCategoryList.jsp?productType=원피스">원피스</a></li>
                                     </ul>
-                                </li>  
-                                
+                                </li>
                                 <li class="dropdown"><a href="#">신발<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="producCategoryList.jsp?productType=운동화">운동화</a></li>
 										<li><a href="producCategoryList.jsp?productType=구두">구두</a></li>
                                     </ul>
                                 </li>
-                                
                                 <li class="dropdown"><a href="#">가전제품<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="producCategoryList.jsp?productType=컴퓨터">컴퓨터</a></li>
 										<li><a href="producCategoryList.jsp?productType=TV">TV</a></li>
                                     </ul>
                                 </li>
-                                
                                 <li class="dropdown"><a href="#">식품<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="producCategoryList.jsp?productType=신선식품">신선식품</a></li>
