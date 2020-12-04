@@ -15,10 +15,8 @@
 						<h2>계정관리</h2>
 						<form method="post" action="./userManageAction.jsp">
 							<%     
-							String userID =session.getAttribute("userID").toString(); 
-							System.out.println(userID);
-							UserDTO userInfo = new UserDAO().getUser(userID);
-							  
+							String userID =session.getAttribute("userID").toString();    
+							UserDTO userInfo = new UserDAO().getUser(userID); 
 							%>
 							<div class="form-group">
 								<label>아이디</label>
@@ -47,15 +45,9 @@
 							<div class="form-group">
 								<label>생년월일</label>
 								<input type="text" name ="userBirthday" value ="<%= userInfo.getUserBirthday()%>" />
-							</div>
-							<div class="form-group">
-								<label>회원유형</label> 
-								<select name="userType" class="form-group" style="font-size:22px">
-										<option value="customer" selected> 일반고객 </option>
-										<option value="seller"> 판매자 </option>
-										<option value="manager"> EasyCoMMe 관리자 </option> 
-								</select> 
-							</div>
+							</div> 
+							<input type="hidden" name ="userType" value="<%= userInfo.getUserType()%>">
+							
 							<button type="submit" class="btn btn-default">정보수정</button>
 						</form>
 					</div><!--/login form-->
