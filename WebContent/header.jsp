@@ -67,8 +67,7 @@
 								}else{	
 									out.println("<li><a href='userManage.jsp'><i class='fa fa-user'></i> 계정관리</a></li>");  
 									if(session.getAttribute("userType").equals("customer")){ 
-										out.println("<li><a href='cart.jsp'><i class='fa fa-shopping-cart'></i> 장바구니</a></li>");
-										out.println("<li><a href='cart.jsp'><i class='fa fa-star'></i> 구매내역</a></li>");	
+										out.println("<li><a href='cart.jsp'><i class='fa fa-shopping-cart'></i> 장바구니</a></li>"); 
 									}
 									else if(session.getAttribute("userType").equals("seller")){ 
 										out.println("<li><a href='productRegister.jsp'><i class='fa fa-crosshairs'></i> 상품등록</a></li>");	
