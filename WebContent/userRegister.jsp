@@ -46,7 +46,6 @@
 								<select name="userType" class="form-group" style="font-size:22px">
 										<option value="customer" selected> 일반고객 </option>
 										<option value="seller"> 판매자 </option>
-										<option value="manager"> EasyCoMMe 관리자 </option> 
 								</select> 
 							</div>
 							<button type="submit" class="btn btn-default">회원가입</button>
