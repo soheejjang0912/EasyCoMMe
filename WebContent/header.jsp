@@ -72,7 +72,7 @@
 									}
 									else if(session.getAttribute("userType").equals("seller")){ 
 										out.println("<li><a href='productRegister.jsp'><i class='fa fa-crosshairs'></i> 상품등록</a></li>");	
-									}
+									} 
 									out.println("<li><a href='userLogout.jsp'><i class='fa fa-lock'></i> 로그아웃</a></li>");
 								}
 								%> 

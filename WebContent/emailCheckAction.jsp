@@ -23,7 +23,9 @@
 		script.println("</script>");
 		script.close();
 		return;
-	} 
+	}  
+	
+ 
 	String userEmail = userDAO.getUserEmail(userID); //사용자의 이메일 주소 가져와서
 	boolean isRight = (new SHA256().getSHA256(userEmail).equals(code))?true : false; //사용자의  코드값이 일치한지 체크
 	if(isRight == true){
@@ -31,6 +33,7 @@
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('인증에 성공했습니다.');");
+		session.invalidate();//클라이언트의 세션정보 모두 파기
 		script.println("location.href = 'index.jsp'");
 		script.println("</script>");
 		script.close();

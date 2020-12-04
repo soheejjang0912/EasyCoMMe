@@ -86,8 +86,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">   
-										<img src="./images/product-details/<%= product.getProductImg()%>" width="200px" height="200px" alt="" />
-										
+										<img src="./images/product-details/<%= product.getProductImg()%>" width="200px" height="200px" alt="" />									
 										<h2><%= product.getProductName()%></h2>
 										<p><%= product.getProductPrice()%>원</p> 
 									</div>

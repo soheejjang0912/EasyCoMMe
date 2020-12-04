@@ -11,7 +11,7 @@
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1">
 					<div class="login-form"><!--login form-->
-						<h2>Login to your account</h2>
+						<h2>회원가입</h2>
 						<form method="post" action="./userRegisterAction.jsp">
 							<div class="form-group">
 								<label>아이디</label>
